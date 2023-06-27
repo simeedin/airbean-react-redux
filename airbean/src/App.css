@@ -1,0 +1,27 @@
+
+#root {
+  min-width: 375px;
+  max-width: 375px;
+  min-height: 839px;
+}
+
+.landing {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #38846D;
+  background-image: url('./assets/background.svg');
+  background-repeat: no-repeat;
+  
+  
+  
+}
+
+
+.landingLogo {
+  max-width: 275px;
+  max-height: 149px;
+}
+
+

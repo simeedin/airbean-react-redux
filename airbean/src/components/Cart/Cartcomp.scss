@@ -1,0 +1,102 @@
+
+.cart  {
+    min-height: 839px;
+    position: relative;
+    height: 145vh;
+    margin-top: -4.8rem;
+    margin-bottom: -47.6rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    // background-image: url('../../assets/backgroundOverlay.svg');
+    // background-repeat: no-repeat;
+    // background-position: center top;
+}
+
+
+.iconWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.cartAndQuantity {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+// .wrapper {
+//     min-height: 839px;
+//     height: 100vh;
+//     background-color: #F3E4E1;
+//     background-image: url('../../assets/backgroundOverlay.svg');
+//     background-repeat: no-repeat;
+//     background-position: center top;  
+// }
+
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px  solid transparent;
+    border-bottom: 10px solid white;
+    margin-bottom: -8px;
+    margin-left: 19.9rem;
+}
+
+.cartContent {
+    width: 341px;
+    background-color: white;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: 1rem;
+    margin-top: 7px;
+    border-radius: 3px;
+}
+
+.cartText {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'PT Serif';
+    font-size: 32px;
+    line-height: 38px;
+    color: #2F2926;
+    margin-bottom: 2rem;
+}
+
+.total {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'PT Serif';
+    font-size: 23px;
+    line-height: 28px;
+    color: #2F2926;
+}
+
+.totalText {
+    font-family: 'Work Sans';
+    font-size: 12px;
+    line-height: 16px;
+    color: #2F2926;
+}
+
+.cartBottom {
+    display: flex;
+    justify-content: center;
+}
+
+.payBtn {
+    width: 248px;
+    height: 55px;
+    border-radius: 50px;
+    border-width: 0px;
+    justify-content: space-between;
+    font-family: 'PT Serif';
+    font-size: 24px;
+    line-height: 29px;
+    background-color: #2F2926;
+    color: white;
+    margin-bottom: 2.5rem;
+}

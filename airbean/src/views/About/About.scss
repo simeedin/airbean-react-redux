@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Work+Sans&display=swap');
+
+.about {
+    min-height: 1061px;
+    height: 100vh;
+    background-color: #F3E4E1;
+    background-image: url('../../assets/aboutBackground.svg');
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.aboutText {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    color: #2F2926;
+    line-height: 22px;
+    margin-top: 7rem;
+}
+
+h1 {
+    font-size: 42px;
+    font-family: 'PT Serif';
+    margin-bottom: 1.5rem;
+}
+
+.text {
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Work Sans';
+    margin-bottom: 1rem;
+}
+
+.boldText {
+    font-size: small;
+    font-weight: 600;
+    font-family: 'Work Sans';
+    margin-bottom: 1rem;
+}
+
+.founder {
+    padding-left: 1.5rem;
+}

@@ -1,0 +1,54 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.navIcon {
+    max-width: 48px;
+    max-height: 48px; 
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.hideNav {
+    max-width: 48px;
+    max-height: 48px; 
+    margin-left: 1rem;
+    margin-top: 1rem;
+    opacity: 0;
+}
+
+.cartIcon {
+    margin-right: 1rem;
+    z-index: 0;
+}
+
+
+
+.cartAndQuantity {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.hidden {
+    display: none;
+}
+
+.quantityIcon {
+    z-index: 1;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border-width: 0px;
+    margin-right: 1rem;
+    margin-bottom: -10px;
+    margin-top: 5px;
+    background-color: #E5674E;
+    border-color: #E5674E;
+    color: white;
+    font-size: 12px;
+    font-family: 'PT Serif';
+}

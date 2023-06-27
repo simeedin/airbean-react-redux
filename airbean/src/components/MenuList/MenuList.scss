@@ -1,0 +1,24 @@
+.menuList {
+    min-height: 839px;
+    height: 100vh;
+    background-color: #F3E4E1;
+    background-image: url('../../assets/headerNfooter.svg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    overflow: hidden;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+.menuTitle {
+    font-family: 'PT Serif';
+    font-size: 42px;
+    line-height: 50px;
+    color: #2F2926;
+    align-self: center;
+
+}

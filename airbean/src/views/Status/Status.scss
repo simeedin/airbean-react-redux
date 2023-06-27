@@ -1,0 +1,62 @@
+.status {
+    min-height: 667px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #E5674E;
+}
+
+.orderNrText {
+    font-family: 'Work Sans';
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    margin-top: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.orderNr {
+    font-family: 'Work Sans';
+    font-size: 16px;
+    font-weight: 700;
+    color: white; 
+}
+
+.statusText {
+    font-family: 'PT Serif';
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 43px;
+    color: white;
+    text-align: center;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 1.5rem;
+}
+
+.drone {
+    margin-bottom: 1rem;
+}
+
+.eta {
+    font-family: 'Work Sans';
+    font-size: 22px;
+    font-weight: 400;
+    color: white;
+}
+
+.okBtn {
+    background-color: white;
+    border-radius: 50px;
+    border-width: 0;
+    width: 184px;
+    height: 55px;
+    font-family: 'PT Serif';
+    font-size: 24px;
+    font-weight: 700;
+    color: #2F2926;
+    margin-bottom: 4.3rem;
+}
+

@@ -1,0 +1,49 @@
+.menuItem {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-left: 1.7rem;
+    margin-right: 1.7rem;
+}
+
+.menuLeftSide {
+    display: flex;
+    flex-direction: row;
+}
+
+.product {
+    font-family: 'PT Serif';
+    font-size: 23px;
+    line-height: 27px;
+    color: #2F2926;
+    margin-bottom: 3px;
+}
+
+.price {
+    font-family: 'PT Serif';
+    font-size: 22px;
+    line-height: 27px;
+    color: #2F2926;
+    margin-bottom: 0;
+}
+
+.description {
+    font-family: 'Work Sans';
+    font-size: 12px;
+    line-height: 15px;
+    color: #2F2926;
+    margin-bottom: 1rem;
+}
+
+.addBtn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border-width: 0px;
+    background-color: #2F2926;
+    color: white;
+    font-size: 30px;
+    margin-right: 1rem;
+    margin-top: 6px;
+}
