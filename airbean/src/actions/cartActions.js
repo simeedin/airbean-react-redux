@@ -20,4 +20,11 @@ const getOrder = (order) => {
     }
 }
 
-export {addProduct, clearCart, getOrder}
+const removeProduct = (product) => {
+    return {
+        type: 'REMOVE_PRODUCT',
+        payload: product
+    }
+}
+
+export {addProduct, clearCart, getOrder, removeProduct}

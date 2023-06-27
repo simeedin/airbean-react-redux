@@ -1,7 +1,7 @@
 import './CartItem.scss';
 
 function CartItem(props) {
-    const {name, price, quantity} = props;
+    const {name, price, quantity, remove} = props;
     const total = quantity * price;
     return (
         <div className='cartItem'>
@@ -9,7 +9,10 @@ function CartItem(props) {
                 <h3 className='productTitle'>{name}</h3>
                 <p className='productPrice'>{total} kr</p>
             </div>
-            <p className='quantity'>{quantity}</p>
+            <div className='quantityAndBtn'>
+                <p className='quantity'>{quantity}</p>
+                <button className='removeBtn' onClick={remove}>-</button>
+            </div>
         </div>
     )
 }

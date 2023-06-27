@@ -2,8 +2,8 @@ import './Cartcomp.scss';
 import cartIcon from '../../assets/cartIcon.svg';
 import navIcon from '../../assets/navIcon.svg';
 import CartItem from '../CartItem/CartItem';
-import { clearCart, getOrder } from '../../actions/cartActions';
-import { useState } from 'react';
+import { clearCart, getOrder, removeProduct} from '../../actions/cartActions';
+import { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 
@@ -19,15 +19,35 @@ function Cartcomp() {
 
     const cart = useSelector((state) => {return state.cart});
     const total = useSelector((state) => {return state.total});
+
+    const [totalDiscount, setTotalDiscount] = useState(0);
+
+    useEffect(() => {
+        setTotalDiscount(total);
+        handleDiscount();
+    });
+    
+    function handleDiscount() {
+        let bryggkaffe = cart.find((product) => product.name === 'Bryggkaffe');
+        let bakelse = cart.find((product) => product.name === 'Gustav Adolfsbakelse');
+        let totalWithDiscount = total - 49;
+        if (bryggkaffe && bakelse) {
+            setTotalDiscount(totalWithDiscount);
+        }
+    }
     
     const totalQuantity = cart.reduce((acc, product) => {
         return acc + product.quantity;
     }, 0);
     
     const cartComponents = cart.map((product) => {
-        return <CartItem name={product.name} price={product.price} quantity={product.quantity} key={product.id}/>
+        return <CartItem name={product.name} price={product.price} quantity={product.quantity} remove={() => handleRemove(product)} key={product.id}/>
         
     });
+
+    function handleRemove(product) {
+        dispatch(removeProduct(product));
+    }
 
     async function createOrder(orderDetails) {
         try {
@@ -78,7 +98,7 @@ function Cartcomp() {
                         <h3 className='cartText'>Din beställning</h3>
                         <div className='cartItems'>
                             {cartComponents}
-                            <h4 className='total'>Total <span className='totalSum'>{total}kr</span></h4>
+                            <h4 className='total'>Total <span className='totalSum'>{totalDiscount}kr</span></h4>
                             <p className='totalText'>Inkl moms + drönarleverans</p>
                         </div>
                         <div className='cartBottom'>

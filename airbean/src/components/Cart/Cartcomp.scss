@@ -20,17 +20,30 @@
 .cartAndQuantity {
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
     
 }
 
-// .wrapper {
-//     min-height: 839px;
-//     height: 100vh;
-//     background-color: #F3E4E1;
-//     background-image: url('../../assets/backgroundOverlay.svg');
-//     background-repeat: no-repeat;
-//     background-position: center top;  
-// }
+.cartIcon {
+    margin-right: 1rem;
+    z-index: 0;
+}
+
+.quantityIcon {
+    z-index: 1;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border-width: 0px;
+    margin-right: 1rem;
+    margin-bottom: -10px;
+    margin-top: 5px;
+    background-color: #E5674E;
+    border-color: #E5674E;
+    color: white;
+    font-size: 12px;
+    font-family: 'PT Serif';
+}
 
 
 .arrow {

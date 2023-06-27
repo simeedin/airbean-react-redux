@@ -25,6 +25,25 @@ const cartReducer = (state = initialState, action) => {
                     total: updatedTotal
                 }
             }
+        case 'REMOVE_PRODUCT':
+            let removedProduct = action.payload;
+            let removedQuantity = state.cart.find((product) => product.id === removedProduct.id);
+            if (removedQuantity.quantity === 1) {
+                let updatedCart = state.cart.filter((product) => product.id !== removedProduct.id);
+                let updatedTotal = state.total - removedQuantity.price;
+                return {
+                    ...state,
+                    cart: updatedCart,
+                    total: updatedTotal
+                }
+            } else {
+                removedQuantity.quantity = removedQuantity.quantity - 1;
+                let updatedTotal = state.total - removedQuantity.price;
+                return {
+                    ...state,
+                    total: updatedTotal
+                }
+            }           
         case 'CLEAR_CART':
             return {
                 ...state,

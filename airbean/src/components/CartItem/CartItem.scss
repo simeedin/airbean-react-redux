@@ -2,7 +2,32 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: baseline;
 }
+
+
+.removeBtn {
+    height: 13px;
+    width: 13px;
+    margin-top: 3px;
+    margin-left: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 10px;
+    border-width: 0;
+    background-color: darkred;
+    color: white;
+    
+}
+
+.quantityAndBtn {
+    display: flex;
+    flex-direction: row;
+}
+// .productAndPrice {
+//     margin-right: 3rem;
+// }
 
 .quantity {
     font-family: 'Work Sans';
